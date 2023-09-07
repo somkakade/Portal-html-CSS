@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5d6b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: #d86f45;
+  position: relative;
+}
+.square::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 45px;
+  height: 250px;
+  top: -32%;
+  right: 33%;
+  background-color: #d86f45;
+}
+.square::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 250px;
+  height: 45px;
+  top: 33%;
+  right: -33%;
+  background-color: #d86f45;
+}
